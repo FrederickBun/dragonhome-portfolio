@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import Container from "@components/Container.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import ArrowCard from "@components/ArrowCard.astro";
+import Link from "@components/Link.astro";
+import { dateRange } from "@lib/utils";
+import { SITE, HOME, SOCIALS } from "@consts";
+import { getEntrySlug, parseEntrySlug } from "node_modules/astro/dist/content/utils";
+import BackToPrev from "@components/BackToPrev.astro";
+
+const uses = (await getCollection("uses"))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
+
+const projects = (await getCollection("projects"))
+  .filter(project => !project.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
+
+const allwork = (await getCollection("work"))
+  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
+  .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
+
+const work = await Promise.all(
+  allwork.map(async (item) => {
+    const { Content } = await item.render();
+    return { ...item, Content };
+  })
+);
+
+---
+
+<PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
+  <Container>
+		<h1 class="animate text-4xl font-bold">404: Not Found</h1>
+    <article class="space-y-4">
+      <p class="animate">
+        很抱歉，您访问了一个不存在的页面🤔
+      </p>
+      <p class="animate">
+        而我们也没有能力解决这个问题。。。
+      </p>
+    </article>
+    <section class="animate space-y-4">
+        <ul class="flex flex-wrap gap-2">
+          {SOCIALS.map(SOCIAL => (
+            <li class="flex gap-x-2 text-nowrap">
+              <Link href={SOCIAL.HREF} external aria-label={`${SITE.NAME} on ${SOCIAL.NAME}`}>
+                {SOCIAL.NAME}
+              </Link>
+              {"/"}
+            </li>
+          ))}
+          <li class="line-clamp-1">
+            <Link href={`mailto:${SITE.EMAIL}`} aria-label={`Email ${SITE.NAME}`}>
+              {SITE.EMAIL}
+            </Link>
+          </li>
+        </ul>
+      </section>
+      <br />
+      <h4 class="animate text-1.5xl font-bold">或许您可以：</h4>
+      <p class="animate">
+        <Link href="/" aria-label="Back to Home">
+          回到主页
+        </Link>
+        <Link href="/uses" aria-label="Back to Home">
+          逛逛我的装备
+        </Link>
+        <Link href="/works" aria-label="Back to Home">
+          看看我在哪里完成工作
+        </Link>
+        <Link href="/projects" aria-label="Back to Home">
+          瞅瞅我的项目
+        </Link>
+        <Link href="/friends" aria-label="Back to Home">
+          了解我的朋友们
+        </Link>
+      </p>
+  </Container>
+</PageLayout>
