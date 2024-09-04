@@ -1,6 +1,6 @@
 ---
 title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
+description: "Portfolio and uses build with astro."
 date: "Mar 18 2024"
 demoURL: "https://astro-sphere-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-sphere"
@@ -8,7 +8,7 @@ repoURL: "https://github.com/markhorn-dev/astro-sphere"
 
 ![Astro Sphere Lighthouse Score](/astro-sphere.jpg)
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and uses theme based on my personal website.
 
 It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
 
@@ -51,7 +51,7 @@ Rendered in ~40ms on localhost
 
 ## 📄 Configuration
 
-The blog posts on the demo serve as the documentation and configuration.
+The uses posts on the demo serve as the documentation and configuration.
 
 ## 💻 Commands
 

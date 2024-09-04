@@ -59,4 +59,4 @@ draft: false
 This is a paragraph about my project.
 ```
 
-🎉 Congrats, you are now a blogger, _and_ developer.
+🎉 Congrats, you are now a usesger, _and_ developer.

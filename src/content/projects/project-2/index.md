@@ -1,6 +1,6 @@
 ---
 title: "Astro Nano"
-description: "Minimal portfolio and blog build with astro and no frameworks."
+description: "Minimal portfolio and uses build with astro and no frameworks."
 date: "Mar 26 2024"
 demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-nano"
@@ -8,7 +8,7 @@ repoURL: "https://github.com/markhorn-dev/astro-nano"
 
 ![Astro Nano](/astro-nano.png)
 
-Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
+Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and uses theme.
 
 Built with Astro, Tailwind and Typescript, an no frameworks.
 
@@ -52,7 +52,7 @@ Rendered in ~40ms on localhost
 
 ## 📄 Configuration
 
-The blog posts on the demo serve as the documentation and configuration.
+The uses posts on the demo serve as the documentation and configuration.
 
 ## 💻 Commands
 

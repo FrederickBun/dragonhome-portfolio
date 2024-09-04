@@ -58,4 +58,4 @@ draft: false
 This is a paragraph about my role at this company.
 ```
 
-🎉 Congrats, you are now a blogger, _and_ developer, _and_ employed.
+🎉 Congrats, you are now a usesger, _and_ developer, _and_ employed.

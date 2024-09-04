@@ -14,7 +14,7 @@ export const HOME: Metadata = {
   DESCRIPTION: "这里是假的 404 页面，其实是 磅豆龙 的个人 Portfolio 页面。",
 };
 
-export const BLOG: Metadata = {
+export const USES: Metadata = {
   TITLE: "我的装备",
   DESCRIPTION: "看看我都用些什么",
 };

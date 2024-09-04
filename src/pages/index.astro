@@ -7,7 +7,7 @@ import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
-const blog = (await getCollection("blog"))
+const uses = (await getCollection("uses"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
@@ -55,7 +55,7 @@ const work = await Promise.all(
             当然，本人正处于探索期，希望在将来能与更多人分享自己的想法，并一起努力解决一些问题。
           </p>
           <p class="animate">
-            如果你想看看我的文章，可以访问 <Link href="https://blog.setbun.com">博客</Link>，我会在上面记录我的生活，做一些 APP 分享，或赘述一些对某些事物产生的看法。欢迎订阅更新～
+            如果你想看看我的文章，可以访问 <Link href="https://uses.setbun.com">博客</Link>，我会在上面记录我的生活，做一些 APP 分享，或赘述一些对某些事物产生的看法。欢迎订阅更新～
           </p>
           <p class="animate">
             最后，如果你愿意，欢迎 <Link href="https://github.com/FrederickBun/FrederickBun/blob/main/DONATE.md">赞助</Link> 我，你们的支持永远是我最大的动力！
@@ -68,12 +68,12 @@ const work = await Promise.all(
           <h5 class="font-semibold text-black dark:text-white">
             我的装备
           </h5>
-          <Link href="/blog">
+          <Link href="/uses">
             更多
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
-          {blog.map(post => (
+          {uses.map(post => (
             <li>
               <ArrowCard entry={post} />
             </li>

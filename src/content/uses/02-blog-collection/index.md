@@ -1,15 +1,15 @@
 ---
 title: "Blog Collection"
-description: "How to add posts to your blog."
+description: "How to add posts to your uses."
 date: "Mar 21 2024"
 ---
 
-The `blog` collections is found in `src/content/blog`.
+The `uses` collections is found in `src/content/uses`.
 
-Working with the `blog` collection:
+Working with the `uses` collection:
 
 ```
-📁 /src/content/blog
+📁 /src/content/uses
 └── 📁 post-1
       └── 📄 index.md
 └── 📁 post-2
@@ -18,8 +18,8 @@ Working with the `blog` collection:
 
 In the above example, two static pages will be generated, based on the existence of a classic markdown `.md` file or a jsx compatible markdown `.mdx` file. The folder name represents the slug:
 
-- `https://example.com/blog/post-1`
-- `https://example.com/blog/post-2`
+- `https://example.com/uses/post-1`
+- `https://example.com/uses/post-2`
 
 
 All content must be preceded by required metadata in the markdown file in `yaml` format, and be enclosed by triple dashes. --- ---
@@ -57,4 +57,4 @@ draft: false
 This is a paragraph.
 ```
 
-🎉 Congrats, you are now a blogger.
+🎉 Congrats, you are now a usesger.
