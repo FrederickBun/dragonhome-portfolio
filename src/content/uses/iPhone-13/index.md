@@ -1,6 +1,6 @@
 ---
 title: "iPhone 13"
-description: "256GB Blue"
+description: "256GB | Blue"
 date: "Mar 22 2023"
 ---
 ![thumnail](main.webp)

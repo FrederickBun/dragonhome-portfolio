@@ -1,6 +1,6 @@
 ---
 title: "iPad mini 6th Generation"
-description: "256GB Space Gray"
+description: "256GB | Space Gray"
 date: "Mar 22 2021"
 ---
 ![thumbnail](main.webp)

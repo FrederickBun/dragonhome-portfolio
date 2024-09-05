@@ -1,6 +1,6 @@
 ---
 title: "MacBook Air M2"
-description: "512GB 16GB Liquid-Display Silver"
+description: "512GB | 16GB | Liquid Display | Silver"
 date: "Sept 6 2024"
 ---
 ![thumbnail](main.jpg)
