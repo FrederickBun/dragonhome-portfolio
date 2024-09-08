@@ -7,7 +7,7 @@ date: "Mar 22 2021"
 
 ---
 
-```PlainText
+```plaintext
 储存：256GB
 颜色：深空黑
 ```

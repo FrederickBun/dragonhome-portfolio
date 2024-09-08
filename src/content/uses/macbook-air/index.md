@@ -7,7 +7,7 @@ date: "Sept 6 2024"
 
 ---
 
-```PlainText
+```plaintext
 芯片：Apple M2
 储存：512GB
 内存：16GB

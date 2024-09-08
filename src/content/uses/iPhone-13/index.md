@@ -7,7 +7,7 @@ date: "Mar 22 2023"
 
 ---
 
-```PlainText
+```plaintext
 储存：256GB
 ```
 
