@@ -1,16 +1,9 @@
 ---
-title: "MX Keys S"
+title: "MX Aniware 2"
 description: "Graphite"
-date: "Feb 6 2024"
+date: "Feb 28 2020"
 ---
-![thumbnail](main.webp)
-
+![thumbnail](/main.png)
 ---
 
-```plaintext
-颜色：石墨灰
-```
-
-我的独立键盘，虽然不是机械键盘，但是打字还是非常爽。
-
-如果你想入手一款非机械键盘，非常推荐你选择 `Logi MX Keys S`
+我的第一个无线鼠标，主要用于外出时使用。这是一款设计美观的鼠标，用起来非常的舒服，很适合我！
