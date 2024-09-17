@@ -1,7 +1,7 @@
 ---
 title: "hexo-theme-redefine"
 description: "一款简洁，快速，纯净的 Hexo 主题；简洁，但不简单。"
-date: "Oct 2 2022"
+date: "Sep 30 2022"
 demoURL: "https://redefine.ohevan.com"
 repoURL: "https://github.com/EvanNotFound/hexo-theme-redefine"
 ---
