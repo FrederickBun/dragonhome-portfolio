@@ -1,7 +1,7 @@
 import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
-  NAME: "〔龙窝〕主页",
+  NAME: "磅豆龙 の Home",
   DESC: "世界再大，大不过你我凝视的微笑",
   EMAIL: "i@setbun.com",
   NUM_POSTS_ON_HOMEPAGE: 3,
